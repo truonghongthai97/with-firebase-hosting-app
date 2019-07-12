@@ -1,8 +1,9 @@
-import * as React from 'react'
-import App from '../components/App'
+import React from 'react';
 
-export default () => (
-  <App>
-    <p>Index Page haha</p>
-  </App>
-)
+import HomePage from '../containers/HomePage';
+
+const HomePageContainer = () => <HomePage />;
+HomePageContainer.getInitialProps = async ({ query }) => {
+  return {};
+};
+export default HomePageContainer;

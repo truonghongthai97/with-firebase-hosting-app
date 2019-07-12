@@ -1,0 +1,26 @@
+@mixin custom-scroll(
+  $widthScroll: 9px,
+  $bkgTrack: #f1f1f1,
+  $bkgHandle: #d8d8d8,
+  $bkgHandleHover: #b3afaf
+) {
+  /* Width */
+  &::-webkit-scrollbar {
+    width: $widthScroll;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: $bkgTrack;
+    border-radius: 4.5px;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: $bkgHandle;
+    border-radius: 4.5px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: $bkgHandleHover;
+  }
+}
