@@ -5,7 +5,7 @@ import Footer from './Footer';
 const Layout = ({ children, title = 'this is the default title' }) => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>{children}</main>
       <Footer />
       {/* <DrawerRight /> */}

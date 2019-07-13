@@ -1,0 +1,143 @@
+@import "../../../../static/scss/main.scss";
+
+.bgk-img-wrapper {
+
+    height: 400px;
+    width: 100%;
+
+    background: {
+        image: url('../../../../static/images/bkg.jpg');
+        repeat: no-repeat;
+        position: center;
+    }
+}
+
+.about-img-wrapper {
+    flex: 0 0 45%;
+    text-align: center;
+    padding: 1.5rem;
+
+    img {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+.about-infor-wrapper {
+    flex: 1 0;
+    padding: 1.5rem;
+}
+
+.aboutme-wrapper {
+    display: block;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin-top: -140px;
+
+    &__name {
+        margin-top: 2rem;
+        font-size: 36px;
+        font-family: Dosis, 'Open Sans', Arial, sans-serif;
+        text-transform: uppercase;
+        color: $main-color;
+        font-weight: 900;
+    }
+
+    &__office {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-weight: 600;
+        color: #555555;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        line-height: 1.7;
+    }
+
+    &__list-infor {
+        line-height: 2;
+
+        span {
+            font-weight: 700;
+            display: inline-block;
+            width: 120px;
+        }
+    }
+
+    &__social-wrapper {
+        flex: 0 0 100%;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $main-color;
+
+            li {
+                padding: 1rem;
+            }
+        }
+
+        a {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-color: #ffffff;
+                border-radius: 50%;
+                width: 0;
+                height: 0;
+                transition: 0.5s;
+            }
+
+            &:hover:after {
+                width: 100%;
+                height: 100%;
+            }
+
+            &:hover>i {
+                color: $main-color;
+            }
+        }
+
+        i {
+            position: absolute;
+            z-index: 2;
+            color: #ffffff;
+            transition: 0.5s;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .aboutme-wrapper {
+        display: flex;
+    }
+
+    .about-infor-wrapper {
+        flex: 1 0;
+        padding: 3rem 3rem 1.5rem 1.5rem;
+    }
+
+    .about-img-wrapper {
+        padding: 3rem 1.5rem 1.5rem 3rem;
+    }
+}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}
