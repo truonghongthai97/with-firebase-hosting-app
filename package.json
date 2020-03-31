@@ -24,7 +24,7 @@
     "@zeit/next-sass": "^1.0.1",
     "firebase-admin": "^6.3.0",
     "firebase-functions": "^3.0.2",
-    "next": "^7.0.3",
+    "next": "^9.3.2",
     "next-compose-plugins": "^2.2.0",
     "next-fonts": "^0.17.0",
     "next-images": "^1.1.2",
